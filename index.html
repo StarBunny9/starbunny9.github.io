@@ -1,24 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="style.css">
+    <title>StarBunny's Website</title>
+    <style>
+        @font-face {
+            font-family: "KodeMono";
+            src: url("Assets/Fonts/Kode_Mono/static/KodeMono-Regular.ttf") format("truetype");
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: "KodeMono";
+            src: url("Assets/Fonts/Kode_Mono/static/KodeMono-Bold.ttf") format("woff2");
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            /*background-image: url('Assets/Images/Backgrounds/draft4LessOpacity.png');*/
+            /*background-repeat: no-repeat;*/
+            /*background-size: cover;*/
+            /*background-position: center;*/
+            /*background-attachment: fixed;*/
+            background-color: lightblue;
+
+            font-family: "KodeMono", sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            background-color: white;
+            width: 200px;
+            height: 200px;
+            box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.500);
+            border: 3px black solid;
+
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Hello World!</h1>
-<h2>Hello World!</h2>
-<h3>Hello World!</h3>
-<h4>Hello World!</h4>
-<h5>Hello World!</h5>
-<h6>Hello World!</h6>
 <ul>
-    <li>Item 1</li>
-    <ul>
-        <li>Item 2</li>
-    </ul>
-    <li>Item 2</li>
-    <li>Item 3</li>
+    <li><a href="Pages/home.html">/home.html</a></li>
+    <li><a href="Pages/guestbook.html">/guestbook.html</a></li>
+    <li><a href="Pages/projects.html">/projects.html</a></li>
+    <li><a href="Pages/who_am_i.html">/who_am_I.html</a></li>
+
 </ul>
 </body>
 </html>
