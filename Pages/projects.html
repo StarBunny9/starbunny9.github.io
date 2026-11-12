@@ -7,14 +7,14 @@
     <style>
         @font-face {
             font-family: "KodeMono";
-            src: url("Assets/Fonts/Kode_Mono/static/KodeMono-Regular.ttf") format("truetype");
+            src: url("/Assets/Fonts/Kode_Mono/static/KodeMono-Regular.ttf") format("truetype");
             font-weight: 400;
             font-style: normal;
             font-display: swap;
         }
         @font-face {
             font-family: "KodeMono";
-            src: url("Assets/Fonts/Kode_Mono/static/KodeMono-Bold.ttf") format("woff2");
+            src: url("/Assets/Fonts/Kode_Mono/static/KodeMono-Bold.ttf") format("woff2");
             font-weight: 700;
             font-style: normal;
             font-display: swap;
@@ -28,7 +28,7 @@
             /*background-size: cover;*/
             /*background-position: center;*/
             /*background-attachment: fixed;*/
-            background-color: lightblue;
+            background-color: lightyellow;
             font-family: "KodeMono", sans-serif;
             display: flex;
             flex-direction: row;
@@ -57,7 +57,7 @@
         }
         .main-area{
             background-color: white;
-            width: 600px;
+            width: 1000px;
             height: auto;
             min-height: 200px;
             max-height: 90vh;
@@ -79,8 +79,36 @@
         .main-area-text {
             padding: 10px;
         }
-        .main-area::-webkit-scrollbar {
+        ::-webkit-scrollbar {
             display: none;
+        }
+        .project{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 200px;
+            background-color: white;
+            margin: 10px;
+            outline: 3px solid black;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+            overflow: clip;
+        }
+        .project-image{
+            height: auto;
+            max-height: calc(100% - 20px);
+            margin-left: 10px;
+            outline: 1px solid black;
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.500);
+        }
+        .project-text{
+            background-color: white;
+            flex: 1;
+            align-self: stretch;
+            margin: 10px;
+            padding: 10px;
+            outline: 1px solid black;
+
+            overflow-y: scroll;
         }
     </style>
 </head>
@@ -89,26 +117,29 @@
 
 <!--Navigation Menu-->
 <ul>
-    <li><a href="Pages/home.html">/home.html</a></li>
-    <li><a href="Pages/guestbook.html">/guestbook.html</a></li>
-    <li><a href="Pages/projects.html">/projects.html</a></li>
-    <li><a href="Pages/who_am_i.html">/who_am_I.html</a></li>
+    <li><a href="/index.html">/home.html</a></li>
+    <li><a href="/Pages/projects.html">/projects.html</a></li>
 </ul>
 
 <!--Main Content Area-->
 <div class="main-area">
-    <img class="main-area-image" src="Assets/Images/Backgrounds/FluidSimulation.png" alt="BannerImage">
+    <img class="main-area-image" src="/Assets/Images/Backgrounds/FluidSimulation.png" alt="BannerImage">
     <div class="main-area-text">
         <h1 style="text-align: left">Projects</h1>
-        <p>
-            Hi there, I'm René, also known as <b>StarBunny</b> online, a passionate and curious game developer from the Netherlands.
-            I'm most interested in programming physics, tools, and (gameplay) systems,
-            but I also have some experience in 3D!
-        </p>
-        <p>
-            Some personal interests are physics, philosophy, skateboarding, Dungeons and Dragons, Games and Esports
-            and I love to watch animated series :).
-        </p>
+        <div class="project">
+            <img class="project-image" src="/Assets/Images/Backgrounds/draft4LessOpacitySquare.png" alt="BannerImage">
+            <div class="project-text">
+                <h3>Some Kinda Project</h3>
+                <p>This is a project Description that tells a lot with not a lot of words</p>
+            </div>
+        </div>
+        <div class="project">
+            <img class="project-image" src="/Assets/Images/Backgrounds/draft4LessOpacitySquare.png" alt="BannerImage">
+            <div class="project-text">
+                <h3>Some Kinda Project</h3>
+                <p>This is a project Description that tells a lot with not a lot of words</p>
+            </div>
+        </div>
     </div>
 </div>
 </body>
