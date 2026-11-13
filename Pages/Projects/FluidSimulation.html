@@ -2,9 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>SPH Fluid Simulation</title>
+    <link rel="stylesheet" href="/CSS/style.css">
 </head>
-<body>
 
+<body class="project-page-body">
+
+<a href="/Pages/projects.html" class="back-button">Back ←</a>
+
+<div class="main-area">
+    <img class="main-area-image" src="/Assets/Images/Backgrounds/FluidSimulation.png" alt="BannerImage">
+    <div class="main-area-text">
+        <h1 style="text-align: left">Fluid Simulation</h1>
+        <p>
+            This is a personal university project where I attempted to make an SPH (Smoothed Particle Hydrodynamics)
+            simulation. It is mostly based on
+            <a href="https://matthias-research.github.io/pages/publications/sca03.pdf">this paper</a>
+            (Müller, Charypar & Gross, 2003) and
+            <a href="https://github.com/SebLague/Fluid-Sim">Sebastian Lague's implementation in unity</a>.
+            Except I tried to make this in C++ and OpenGL to generalise it and learn more on how it could
+            connect to an engine on it's own. Besides learning how to make a fluid simulation,
+            the goal of this project was also to do a benchmark and analysis on optimisations.
+            In this case I learned how to write an OpenGL compute shader containing all the
+            simulation math and handle communication between the CPU and GPU.
+            The benchmark clearly confirmed a reduction in time complexity of
+            <math>
+                <mi>O</mi>
+                <mo>(</mo>
+                <msup><mi>n</mi><mn>2</mn></msup>
+                <mo>)</mo>
+            </math>
+            to
+            <math>
+                <mi>O</mi>
+                <mo>(</mo>
+                <msup><mi>n</mi>></msup>
+                <mo>)</mo>
+            </math>
+            when using the compute shaders, without any major error points or weird behaviour.
+            Please check out this project's <a href="https://github.com/StarBunny9/SPH-Fluid-Simulation/wiki">GitHub Wiki</a> for details about
+            the implementation, benchmarks, tests, analysis and research.
+        </p>
+        <div class="gallery">
+            <img src="/Assets/Images/FluidSimulation/PurpleYellow.png" alt="PurpleYellow">
+            <img src="/Assets/Images/FluidSimulation/Lava.png" alt="Lava">
+            <img src="/Assets/Images/FluidSimulation/Foamy.png" alt="Foamy">
+            <img src="/Assets/Images/FluidSimulation/PinkWave.png" alt="PinkWave">
+            <img src="/Assets/Images/FluidSimulation/BlueJellyFish.png" alt="BlueJellyFish">
+            <img src="/Assets/Images/FluidSimulation/Ball.png" alt="Ball">
+            <img src="/Assets/Images/FluidSimulation/GreenWave.png" alt="GreenWave">
+            <img src="/Assets/Images/FluidSimulation/WaveCrash.png" alt="WaveCrash">
+            <img src="/Assets/Images/FluidSimulation/WhiteSpace.png" alt="WhiteSpace">
+        </div>
+    </div>
+</div>
 </body>
 </html>
