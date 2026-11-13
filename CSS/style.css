@@ -51,7 +51,7 @@ ul li a {
 .main-area{
     background-color: white;
     width: 1000px;
-    height: auto;
+    height: fit-content;
     min-height: 200px;
     max-height: 90vh;
     box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.500);
@@ -67,7 +67,7 @@ ul li a {
     object-fit: cover;
     object-position: center;
     display: block;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.500);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.500);
 }
 .main-area-text {
     padding: 10px;
@@ -83,7 +83,7 @@ ul li a {
     background-color: white;
     margin: 10px;
     outline: 3px solid black;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.500);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
     overflow: clip;
     text-decoration: none;
     color: black;
@@ -99,7 +99,7 @@ ul li a {
     object-fit: cover;
     margin-left: 10px;
     outline: 1px solid black;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.500);
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
 }
 .project-text{
     background-color: white;
@@ -108,6 +108,7 @@ ul li a {
     margin: 10px;
     padding: 10px;
     outline: 1px solid black;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
 
     overflow-y: scroll;
 }
@@ -128,16 +129,37 @@ ul li a {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    justify-content: center;
     gap: 15px;
     width: 100%;
 }
-
+.gallery.puzzlepals{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.gallery.puzzlepals figure{
+    margin: 10px;
+}
+.gallery figure figcaption{
+    margin: 10px;
+    text-align: center;
+}
 .gallery img {
     width: 100%;
     object-fit: cover;
     transition: transform 0.1s ease-in-out;
+    outline: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);;
 }
-
 .gallery img:hover {
     transform: scale(1.03);
+}
+details{
+    margin: 10px;
+    padding: 10px;
+    outline: 1px solid black;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
+}
+details p{
+    margin: 10px;
 }
