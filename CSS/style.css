@@ -29,7 +29,7 @@ body {
 .project-page-body{
     background-color: rgb(220, 255, 220);
 }
-ul {
+ul.nav {
     list-style-type: none;
     background-color: white;
     min-width: 150px;
@@ -44,7 +44,7 @@ ul {
 
     overflow-y: scroll;
 }
-ul li a {
+ul.nav li a {
     text-decoration: none;
     color: black;
 }
@@ -125,6 +125,27 @@ ul li a {
     justify-content: center;
     align-items: center;
     color: black;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.heading p {
+    white-space: nowrap;
+    margin: 0;
+}
+.heading span {
+    flex: 1;
+    height: 1px;
+    background-color: black;
+}
+.project-links{
+    list-style-type: none;
+    background-color: white;
+    padding-left: 20px;
+
+    overflow-y: scroll;
 }
 .gallery {
     display: grid;
