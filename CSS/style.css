@@ -170,16 +170,19 @@ ul.nav li a {
     object-fit: cover;
     transition: transform 0.1s ease-in-out;
     outline: 1px solid black;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
 }
 .gallery img:hover {
     transform: scale(1.03);
 }
 details{
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     padding: 10px;
     outline: 1px solid black;
     box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
+}
+details details{
+    margin: 10px;
 }
 details p{
     margin: 10px;
@@ -192,4 +195,14 @@ details p{
     outline: 1px solid black;
     box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
     margin: 0 auto;
+}
+.video-area{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.video-area video{
+    outline: 2px solid black;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.500);
 }
