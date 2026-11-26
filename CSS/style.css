@@ -161,6 +161,13 @@ ul.nav li a {
 .gallery.puzzlepals figure{
     margin: 10px;
 }
+.gallery.exhibition{
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+}
+.gallery.exhibition figure{
+    margin: 10px;
+}
+
 .gallery figure figcaption{
     margin: 10px;
     text-align: center;
